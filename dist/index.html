@@ -3,9 +3,9 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Подготовка к ЕГЭ по информатике: очные и онлайн-занятия, Python с нуля, практика и регулярные пробники.">
+  <meta name="description" content="Подготовка к ЕГЭ по информатике в Избербаше и онлайн: мини-группы, практика за компьютерами, Python с нуля и бесплатное пробное занятие.">
   <meta name="theme-color" content="#0a1020">
-  <title>ЕГЭ по информатике — подготовка в мини-группах</title>
+  <title>Подготовка к ЕГЭ по информатике в Избербаше и онлайн</title>
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%230a1020'/%3E%3Cpath d='M18 19h28v8H26v6h17v8H26v4h20v8H18z' fill='%23c9ff54'/%3E%3C/svg%3E">
   <style>
     :root {
@@ -34,7 +34,7 @@
     .eyebrow { display: inline-flex; align-items: center; gap: 9px; margin: 0 0 18px; font-size: .78rem; font-weight: 850; letter-spacing: .13em; text-transform: uppercase; }
     .eyebrow::before { content: ""; width: 24px; height: 3px; background: var(--lime); border-radius: 3px; }
     h1, h2, h3, p { margin-top: 0; }
-    h1 { max-width: 850px; margin-bottom: 25px; font-size: clamp(3rem, 7vw, 6.7rem); line-height: .92; letter-spacing: -.067em; font-weight: 900; }
+    h1 { max-width: 820px; margin-bottom: 22px; font-size: clamp(2.8rem, 5vw, 5.4rem); line-height: .94; letter-spacing: -.06em; font-weight: 900; }
     h2 { margin-bottom: 18px; font-size: clamp(2.25rem, 5vw, 4.2rem); line-height: .98; letter-spacing: -.052em; }
     h3 { line-height: 1.15; }
     .section-head { max-width: 700px; margin-bottom: 38px; }
@@ -54,10 +54,10 @@
     .nav-links a:hover { color: var(--white); }
     .nav-links .nav-cta { padding: 10px 15px; color: var(--white); border: 1px solid rgba(255,255,255,.27); border-radius: 13px; }
     .menu-btn { display: none; width: 44px; height: 44px; color: white; border: 1px solid rgba(255,255,255,.25); border-radius: 13px; background: transparent; cursor: pointer; }
-    .hero { position: relative; min-height: 790px; overflow: hidden; color: var(--white); background: var(--ink); }
+    .hero { position: relative; min-height: 720px; overflow: hidden; color: var(--white); background: var(--ink); }
     .hero::before { content: ""; position: absolute; inset: 0; opacity: .17; background-image: linear-gradient(rgba(255,255,255,.12) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,.12) 1px, transparent 1px); background-size: 62px 62px; mask-image: linear-gradient(to right, #000, transparent 82%); }
     .hero::after { content: ""; position: absolute; width: 550px; height: 550px; right: -170px; top: 115px; border-radius: 50%; background: var(--blue); opacity: .16; filter: blur(4px); }
-    .hero-inner { position: relative; z-index: 2; display: grid; grid-template-columns: minmax(0, 1.7fr) minmax(290px, .7fr); gap: 70px; align-items: end; min-height: 790px; padding: 155px 0 74px; }
+    .hero-inner { position: relative; z-index: 2; display: grid; grid-template-columns: minmax(0, 1.7fr) minmax(290px, .7fr); gap: 70px; align-items: center; min-height: 720px; padding: 115px 0 44px; }
     .hero-copy > p { max-width: 710px; margin-bottom: 30px; color: rgba(255,255,255,.72); font-size: clamp(1.08rem, 2vw, 1.25rem); }
     .hero-actions { display: flex; flex-wrap: wrap; gap: 12px; }
     .hero-panel { position: relative; padding: 27px; border: 1px solid rgba(255,255,255,.14); border-radius: var(--radius); background: rgba(255,255,255,.065); backdrop-filter: blur(18px); }
@@ -149,9 +149,6 @@
     .fit-card span { display: inline-grid; place-items: center; width: 40px; height: 40px; margin-bottom: 45px; border-radius: 50%; background: var(--lime); font-weight: 900; }
     .fit-card h3 { margin-bottom: 10px; font-size: 1.25rem; }
     .fit-card p { margin: 0; color: var(--muted); }
-    .results-strip { display: grid; grid-template-columns: .7fr 1.3fr; gap: 40px; align-items: center; margin-top: 55px; padding: 34px; border-radius: var(--radius); color: white; background: var(--ink); }
-    .results-strip b { color: var(--lime); font-size: 2.2rem; line-height: 1.05; letter-spacing: -.04em; }
-    .results-strip p { margin: 0; color: rgba(255,255,255,.66); }
     .faq { background: var(--paper); }
     .faq-grid { display: grid; grid-template-columns: .75fr 1.25fr; gap: 80px; }
     .faq-sticky { position: sticky; top: 110px; align-self: start; }
@@ -218,9 +215,9 @@
       .nav-links a { font-size: 1.4rem; }
       .menu-btn { position: relative; z-index: 2; }
       .hero-inner { gap: 42px; padding-bottom: 48px; }
-      h1 { font-size: clamp(2.75rem, 13.5vw, 4.4rem); letter-spacing: -.055em; overflow-wrap: anywhere; }
+      h1 { font-size: clamp(2.5rem, 11.5vw, 3.9rem); letter-spacing: -.055em; overflow-wrap: anywhere; }
       .hero-actions .btn { width: 100%; }
-      .learning-note, .program-grid, .fit-grid, .results-strip, .modal-columns { grid-template-columns: 1fr; }
+      .learning-note, .program-grid, .fit-grid, .modal-columns { grid-template-columns: 1fr; }
       .benefit-grid { grid-template-columns: 1fr; }
       .about-grid { gap: 35px; }
       .about-points { grid-template-columns: 1fr; }
@@ -246,19 +243,19 @@
       <div class="wrap hero-inner">
         <div class="hero-copy reveal">
           <p class="eyebrow">Подготовка в мини-группах</p>
-          <h1>ЕГЭ по информатике — без пробелов в знаниях</h1>
-          <p>Очные и онлайн-занятия с понятной теорией, практикой за компьютерами и домашними заданиями.</p>
+          <h1>Подготовка к ЕГЭ по информатике в Избербаше и онлайн</h1>
+          <p>Мини-группы, практика за компьютерами и Python с нуля. На пробном занятии определим текущий уровень и подберём подходящий формат.</p>
           <div class="hero-actions">
-            <a class="btn btn-primary contact-trigger" href="#contact">Записаться на занятие</a>
-            <a class="btn btn-secondary" href="#groups">Посмотреть группы</a>
+            <a class="btn btn-primary contact-trigger" href="#contact" data-group="Пробное занятие">Записаться на пробное</a>
+            <a class="btn btn-secondary" href="#groups">Сравнить группы</a>
           </div>
           <ul class="hero-facts" aria-label="Ключевые особенности"><li>2–3 раза в неделю</li><li>Python с нуля</li><li>Записи теории</li><li>Регулярные пробники</li></ul>
           <p class="hero-location"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 5-8 12-8 12S4 15 4 10a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg><span>Очные занятия: г. Избербаш, ул. Буйнакского, д. 111</span></p>
         </div>
         <aside class="hero-panel reveal" aria-label="Информация о пробном занятии">
-          <div class="code-top"><span class="trial-badge">Пробное занятие</span><span class="dots"><i></i><i></i><i></i></span></div>
+          <div class="code-top"><span class="trial-badge">Бесплатно · 45 минут</span><span class="dots"><i></i><i></i><i></i></span></div>
           <h2 class="trial-title">Определим текущий уровень подготовки</h2>
-          <p class="trial-copy">Посмотрим, какие задания уже получаются, где есть пробелы и какой темп обучения подойдёт лучше.</p>
+          <p class="trial-copy">Найдём основные пробелы и составим рекомендацию по дальнейшей подготовке.</p>
           <ul class="trial-list"><li>Короткая диагностика знаний</li><li>Разбор сильных и слабых тем</li><li>Рекомендация подходящей группы</li></ul>
           <a class="btn btn-primary contact-trigger" href="#contact" data-group="Пробное занятие">Записаться на пробное</a>
         </aside>
@@ -346,7 +343,6 @@
       <div class="wrap">
         <div class="section-head reveal"><p class="eyebrow">Кому подойдёт</p><h2>Можно начать с разного уровня</h2></div>
         <div class="fit-grid"><article class="fit-card reveal"><span>10</span><h3>Ученикам 10 класса</h3><p>Чтобы спокойно пройти программу без спешки и заложить прочную базу.</p></article><article class="fit-card reveal"><span>11</span><h3>Ученикам 11 класса</h3><p>Чтобы системно закрыть пробелы и научиться собирать полный вариант.</p></article><article class="fit-card reveal"><span>0→</span><h3>Тем, кто начинает</h3><p>Python изучаем с базовых конструкций и постепенно наращиваем сложность.</p></article></div>
-        <div class="results-strip reveal"><b>Результат виден по работе</b><p>Пробники, прогресс по темам и примеры работ появятся в этом разделе по мере накопления реальных результатов учеников — без придуманных отзывов и цифр.</p></div>
       </div>
     </section>
 
@@ -368,7 +364,7 @@
     <section class="cta" id="contact">
       <div class="wrap cta-inner reveal">
         <div><p class="eyebrow">Первый шаг</p><h2>Подберём группу под вашу цель</h2><p>Напишите текущий класс, желаемый результат и насколько уверенно вы решаете задания сейчас. Я помогу выбрать подходящий формат подготовки.</p></div>
-        <div class="cta-actions"><button class="btn btn-primary" type="button" data-open="contact-modal">Записаться на занятие</button><a class="btn btn-secondary" href="#compare">Ещё раз сравнить группы</a></div>
+        <div class="cta-actions"><button class="btn btn-primary" type="button" data-open="contact-modal">Записаться на пробное</button><a class="btn btn-secondary" href="#compare">Ещё раз сравнить группы</a></div>
       </div>
     </section>
   </main>
